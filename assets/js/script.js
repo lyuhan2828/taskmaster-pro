@@ -75,7 +75,8 @@ var status = $(this)
 var index = $(this)
   .closest(".list-group-item")
   .index();
-
+  console.log(status, index);
+  
   tasks[status][index].text = text;
 saveTasks();
 
